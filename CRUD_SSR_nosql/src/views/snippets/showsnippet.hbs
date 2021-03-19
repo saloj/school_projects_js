@@ -1,0 +1,14 @@
+<div class="textCenter">
+  {{#if viewData.snippet}}
+   <h1>{{viewData.snippet.title}}</h1>
+   <i>By {{viewData.snippet.author}}</i>
+   <br />
+  <div id="showSnippet" class="ui secondary piled segment"><pre><code>{{viewData.snippet.content}}</code></pre></div>
+  <br />
+  {{/if}}
+  {{#if viewData.preAuth}}
+  <a class="ui button primary" href="./{{viewData.snippet.id}}/edit">Edit</a>
+  <a class="ui button red" href="./{{viewData.snippet.id}}/remove">Delete</a>
+  {{/if}}
+  <a class="ui button" href="./">Back</a>
+</div>

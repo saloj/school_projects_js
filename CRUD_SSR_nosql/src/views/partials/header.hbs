@@ -1,0 +1,19 @@
+<header>
+  <div class="ui secondary pointing menu">
+    <a class="item" href="./">Snippets!</a>
+    {{#if viewData.signedIn}}
+    <p class="item">User: {{viewData.user}}</p>
+    {{/if}}
+    <div class="right menu">
+      {{#if viewData.signedIn}}
+      <a class="ui button primary" href="./new">Create Snippet</a>
+      <form method="post" action="./users/logout">
+      <button type="submit" class="ui red button">Sign out</button>
+      </form>
+      {{else}}
+      <a class="ui green button" href="./users/login">Sign in</a>
+      <a class="ui button primary" href="./users/new">Register</a>
+      {{/if}}
+    </div>
+  </div>
+</header>

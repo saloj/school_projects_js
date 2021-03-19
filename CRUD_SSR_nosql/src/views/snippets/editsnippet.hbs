@@ -1,0 +1,17 @@
+<div class="textCenter">
+<h1>Edit Snippet</h1>
+ {{#if viewData.snippet}}
+<form class="ui form center aligned basic segment" method="post" action="./{{viewData.snippet.id}}/update">
+  <div class="required field">
+    <label>Title</label>
+    <input type="text" name="title" autocomplete="off" value="{{viewData.snippet.title}}"/>
+  </div>
+  <div class="required field">
+    <label>Content</label>
+    <textarea id="editSnippet" type="text" name="content" autocomplete="off">{{viewData.snippet.content}}</textarea>
+  </div>
+  <button type="submit" class="ui button primary">Update Snippet</button>
+  <a class="ui button red" href="./{{viewData.snippet.id}}">Cancel</a>
+</form>
+ {{/if}}
+</div>

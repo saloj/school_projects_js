@@ -1,0 +1,22 @@
+<h2 class="textCenter">Snippets!</h2>
+<div class="ui relaxed divided list">
+  {{#if viewData.snippets.length}}
+  {{#each viewData.snippets}}
+  <div class="item">
+    <i class="large code middle aligned icon"></i>
+      <div class="content">
+        <a class="header" href="./{{this.id}}">{{this.title}}</a>
+        <div class="description">Author: {{this.author}}</div>
+        <div class="description">Date: {{this.date}}</div>
+      </div>
+  </div>
+  {{/each}}
+  {{else}}
+  <div id="listItem" class="item">
+    <div class="content textCenter">
+      <p class="textCenter">Awfully empty here... Maybe you should create some snippets?</p>
+      <i class="massive cut icon"></i>
+    </div>
+  </div>
+  {{/if}}
+</div>

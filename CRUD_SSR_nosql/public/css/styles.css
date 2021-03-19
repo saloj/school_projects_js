@@ -1,0 +1,33 @@
+.textCenter {
+  text-align: center;
+}
+
+#createSnippet {
+  resize: none;
+}
+
+#editSnippet {
+  resize: none;
+}
+
+#listItem {
+  margin-top: 5em;
+}
+
+#formBlock {
+  display: inline-block;
+}
+
+#loginFormBlock {
+  display: inline-block;
+}
+
+#registerFormBlock {
+  display: inline-block;
+}
+
+#showSnippet {
+  text-align: left;
+  margin-top: 2em;
+  display: inline-block;
+}
