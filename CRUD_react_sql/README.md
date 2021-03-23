@@ -5,5 +5,6 @@
 * Redux
 
 * NodeJS
+* Express
 * SQL
 * Google OAuth (Client & Server)
